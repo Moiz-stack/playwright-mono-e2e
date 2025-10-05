@@ -21,8 +21,8 @@ test.describe('TodoMVC Tests', () => {
     // Clear completed
     await todo.clearCompleted();
 
-    // todos = await todo.getTodos();
-    // expect(todos).not.toContain('Buy milk');
-    // expect(todos).toContain('Write Playwright tests');
+    todos = await todo.getTodos();
+    expect(todos).not.toContain('Buy milk');
+    expect(todos).toContain('Write Playwright tests');
   });
 });
